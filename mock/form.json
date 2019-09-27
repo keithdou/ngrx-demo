@@ -8,19 +8,19 @@
       {
         "pageNumber": "1",
         "title": "Page 1: Name and Address",
-        "customerName": "Sally",
-        "customerAddress": "20 Creek Street, Brisbane 4000"
+        "customerName": "sally",
+        "customerAddress": "2 creek street brisbane 4000"
       },
       {
         "pageNumber": "2",
         "title": "Page 2: Contact Details",
         "emailAddress": "sally@gmail.com",
-        "mobile": "0439123456"
+        "mobile": "0409123456"
       },
       {
         "pageNumber": "3",
         "title": "Page 3: Subscription Details",
-        "subscriptionPeriod": "6"
+        "subscriptionPeriod": "12"
       }
     ]
   }

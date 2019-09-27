@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { Observable, of, empty } from 'rxjs';
 import { Form } from '../models/form';
 import { Page1, Page2, Page3 } from '../models/page';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { tap, map } from 'rxjs/operators';
 
 const httpOptions = {
     headers: new HttpHeaders()
     .set('Content-Type', 'application/json'),
-    observe: 'response'
+    observe: 'response' as 'body'
  };
 
 const API_URL = '/form';  
@@ -20,7 +20,7 @@ export class FormService {
   constructor(private http: HttpClient) { }
 
   getForm(formId: string): Observable<Form> {
-    return this.http.get<Form>(API_URL, httpOptions).pipe(
+    return this.http.get<any>(API_URL, httpOptions).pipe(
             map(resp => {
                 console.log(resp);
                 return resp.body;
