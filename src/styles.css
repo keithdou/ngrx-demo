@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.kd-form {
+    padding: 2rem;
+}
+
+.kd-form-label {
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+
+.kd-grid-label {
+    font-weight: bold;
+}
+
+.kd-button-bar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+body .ui-button,.kd-button {
+    margin-right: 0.75rem;
+}

@@ -1,0 +1,22 @@
+<h1>{{form.title}}</h1>
+<h3>{{page.title}}</h3>
+
+<form [formGroup]="pageFormGroup" (ngSubmit)="updateForm()">
+        <div style="kd-form">
+            <div class="kd-form-label">
+                <label for="emailAddressInput">Email address</label>
+            </div>
+            <input id="emailAddressInput" formControlName="emailAddress" pInputText />
+
+            <div class="kd-form-label">
+                <label for="mobileInput">Mobile Number</label>
+            </div>
+            <input id="mobileInput" formControlName="mobile" pInputText size="40" />
+            
+            <div class="kd-button-bar">
+                <button type="submit" pButton label="Continue" class="kd-button"></button>
+                <button type="button" pButton label="Back" class="kd-button" routerLink="/page1"></button>
+                <button type="button" pButton label="Cancel" class="ui-button-secondary" routerLink=""></button>
+            </div>
+        </div>  
+    </form>

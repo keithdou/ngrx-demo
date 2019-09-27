@@ -1,0 +1,65 @@
+<h1>{{form.title}}</h1>
+<h3>Application Confirmation</h3>
+
+<p-panel header="Your Application" [toggleable]="true">
+<div style="margin-bottom:3rem;">
+    {{form.pages[0].title}}
+
+    <div class="ui-fluid">
+        <div class="ui-g-12">
+            <div class="ui-g-3 ui-sm-12 kd-grid-label">
+                Customer name
+            </div>
+            <div class="ui-g-9">
+                {{form.pages[0].customerName}}
+            </div>
+            <div class="ui-g-3 ui-sm-12 kd-grid-label">
+                Address
+            </div>
+            <div class="ui-g-9">
+                {{form.pages[0].customerAddress}}
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+
+    {{form.pages[1].title}}
+
+    <div class="ui-fluid">
+        <div class="ui-g-12">
+            <div class="ui-g-3 ui-sm-12 kd-grid-label">
+                Email address
+            </div>
+            <div class="ui-g-9">
+                {{form.pages[1].emailAddress}}
+            </div>
+            <div class="ui-g-3 ui-sm-12 kd-grid-label">
+                Mobile number        
+            </div>
+            <div class="ui-g-9">
+                {{form.pages[1].mobile}}
+            </div>
+        </div>
+    </div>
+    
+    <hr/>
+
+    {{form.pages[2].title}}
+
+    <div class="ui-fluid">
+        <div class="ui-g-12">
+            <div class="ui-g-3 ui-sm-12 kd-grid-label">
+                Subscription period
+            </div>
+            <div class="ui-g-9">
+                {{getSubscriptionPeriodName(form.pages[2].subscriptionPeriod)}}
+            </div>
+        </div>
+    </div>
+</div>
+</p-panel>
+
+<div class="kd-button-bar">
+    <button type="button" pButton label="Apply again" class="kd-button" routerLink=""></button>
+</div>

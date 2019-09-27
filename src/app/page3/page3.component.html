@@ -1,0 +1,19 @@
+<h1>{{form.title}}</h1>
+<h3>{{page.title}}</h3>
+
+<form [formGroup]="pageFormGroup" (ngSubmit)="updateForm()">
+    <div style="kd-form">
+        <div class="kd-form-label">
+            <label for="emailAddressInput">Subscription period</label>
+        </div>
+        <p-listbox [options]="subscriptionPeriods" formControlName="subscriptionPeriod"></p-listbox>
+
+        <div class="kd-button-bar">
+            <button type="submit" pButton label="Continue" class="kd-button"></button>
+            <button type="button" pButton label="Back" class="kd-button" routerLink="/page2"></button>
+            <button type="button" pButton label="Cancel" class="ui-button-secondary" routerLink=""></button>
+        </div>
+    </div>  
+</form>
+
+

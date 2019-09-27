@@ -1,0 +1,27 @@
+{
+  "form": {
+    "formId": "1",
+    "title": "My Enrolment Application",
+    "applicantId": "123456",
+    "applicantName": "Fred1234",
+    "pages": [
+      {
+        "pageNumber": "1",
+        "title": "Page 1: Name and Address",
+        "customerName": "Sally",
+        "customerAddress": "20 Creek Street, Brisbane 4000"
+      },
+      {
+        "pageNumber": "2",
+        "title": "Page 2: Contact Details",
+        "emailAddress": "sally@gmail.com",
+        "mobile": "0439123456"
+      },
+      {
+        "pageNumber": "3",
+        "title": "Page 3: Subscription Details",
+        "subscriptionPeriod": "6"
+      }
+    ]
+  }
+}
