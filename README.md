@@ -2,10 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
-ng new <project_name>
-npm install @ngrx/store
-npm install @ngrx/effects
-ng g class models/<model_name>
+## Install
+
+npm install
 
 
 ## Development server
